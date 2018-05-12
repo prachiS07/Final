@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<title>Doctor</title>
+
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+	 <!-- Custom styles for this template -->
+    <link href="css/doctor.css" rel="stylesheet">
+
+
+</head>
+<body>
+	
+
+	<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand logo-font" href="#">
+            Pills Reminder
+        </a>
+        <!-- links toggle -->
+        <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#links" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <!-- account toggle -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#account" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-user"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="links">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pills Game</a>
+                </li>
+                <li class="nav-item dropdown mr-3">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                      Doctor
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">
+                        Consult
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        Appointment
+                      </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="account">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item nav-item-right"><a href="#" class="nav-link">Log in</a></li>
+                <li class="nav-item nav-item-right"><a href="profile.html" class="nav-link">Log out</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+	<!-- Doctor's List -->
+
+<div class="container" style="margin-top: 90px;">
+	<div class="span8">
+        <h1>Judith H. Adler</h1>
+        <legend>General Practice</legend>
+        <p>2238 Geary Blvd
+		San Francisco, CA 94115</p>
+        <div>
+            <div class="more label"><a href="#">Read more</a></div> 
+           <div class="tags">
+                <button class="btn btn-info"><a href="#"></a>Chat</a></button>
+                
+                <button class="btn btn-success" id="contactBtn" onclick="contactData()"><a href="tel:+1-650-304-9211">Contact</a></button>
+               
+                <button class="btn btn-info"><a href="#">Loaction</a></button>
+            	</div> 
+            	<button id="contact" class="btn btn-warning">
+            	Consult
+            	</button> 
+   
+        </div> 
+        <div class="clear"></div>
+        <hr>Andrea Agcaoili</h1>
+        <legend>MD</legend>
+        <p>Andrea Agcaoili, MD </p>
+        <div>
+            <div class="more label"><a href="#">Read more</a></div> 
+            <div class="tags">
+                <span class="btn btn-info"><a href="#"></a>Chat</a></span>
+                <span class="btn btn-success"><a href="#">Contact</a></span>
+                <span class="btn btn-info"><a href="#">Loaction</a></span>
+            </div> 
+        </div>     
+        <hr>
+    </div>
+</div>
+</div>
+
+
+<!-- JQurey -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Firebase -->
+ 	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+	<script>
+	  // Initialize Firebase
+	var config = {
+	apiKey: "AIzaSyA-qF3J-kT8E7a-N2K8sQ_eajN94tvZmL8",
+	authDomain: "pillsapp-16b95.firebaseapp.com",
+	databaseURL: "https://pillsapp-16b95.firebaseio.com",
+	projectId: "pillsapp-16b95",
+	storageBucket: "pillsapp-16b95.appspot.com",
+	messagingSenderId: "132305848990"
+	};
+	firebase.initializeApp(config);
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118358077-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-118358077-1');
+    </script>
+
+	<!--Custom JS -->
+    <script src="js/basic.js"></script>
+
+
+	
+</body>
+</html>
